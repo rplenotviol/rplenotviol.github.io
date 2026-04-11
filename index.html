@@ -167,5 +167,32 @@
 <footer style="margin: 50px 0; font-size: 0.8rem;">
     © 2026 RpleNotViol. Dibuat dengan cinta untuk dunia.
 </footer>
+    <div style="position:fixed; bottom:20px; right:20px; z-index:1000; display:flex; flex-direction:column; align-items:center; gap:10px;">
+    
+    <div id="social-menu" style="display:none; flex-direction:column; gap:10px; margin-bottom:10px;">
+        <a href="https://linkedin.com/in/john-cena" target="_blank" style="background:#0077b5; color:white; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size:20px;">in</a>
+        
+        <a href="mailto:sldhanifa289@gmail.com" style="background:#ea4335; color:white; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size:20px;">✉</a>
+        
+        <a href="https://instagram.com/salsadshfala" target="_blank" style="background:#e1306c; color:white; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size:20px;">📸</a>
+        
+        <a href="https://wa.me/87784430826" target="_blank" style="background:#25d366; color:white; width:45px; height:45px; border-radius:50%; display:flex; align-items:center; justify-content:center; text-decoration:none; box-shadow: 0 4px 8px rgba(0,0,0,0.3); font-size:20px;">📱</a>
+    </div>
+
+    <button onclick="toggleMenu()" style="background:var(--ungu); border:4px solid var(--text-color); color:var(--text-color); width:60px; height:60px; border-radius:50%; font-size:24px; cursor:pointer; box-shadow: 8px 8px 0px var(--text-color); font-family:'Gochi Hand', cursive; font-weight:bold;">
+        HI!
+    </button>
+</div>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById("social-menu");
+    if (menu.style.display === "none") {
+        menu.style.display = "flex";
+    } else {
+        menu.style.display = "none";
+    }
+}
+</script>
 </body>
 </html>
