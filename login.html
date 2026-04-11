@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Admin - RpleNotViol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <style>
+        body { background: #D8B4FE; display: flex; justify-content: center; align-items: center; height: 100vh; font-family: 'Gochi Hand', cursive; }
+        .login-box { background: white; padding: 40px; border: 4px solid #2D3436; border-radius: 20px; box-shadow: 10px 10px 0px #2D3436; text-align: center; }
+        input { display: block; width: 100%; margin: 10px 0; padding: 10px; border: 3px solid #2D3436; border-radius: 10px; }
+        button { background: #BAE6FD; padding: 10px 20px; border: 3px solid #2D3436; border-radius: 10px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2>Admin RpleNotViol 🔐</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button onclick="cekLogin()">Login</button>
+        <p id="pesan" style="color: red;"></p>
+    </div>
+
+    <script>
+        function cekLogin() {
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            
+            // Password simulasi (jangan pakai ini untuk data asli ya!)
+            if (user == "admin" && pass == "rple123") {
+                localStorage.setItem("status", "logged_in"); // Menyimpan status login
+                window.location.href = "dashboard.html"; 
+            } else {
+                document.getElementById("pesan").innerText = "Username/Password Salah!";
+            }
+        }
+    </script>
+</body>
+</html>
