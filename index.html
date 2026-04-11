@@ -4,35 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RpleNotViol - Home</title>
-    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Architects+Daughter&display=swap" rel="stylesheet">
     <style>
         :root {
-            --pastel-purple: #E9D5FF;
-            --neon-purple: #A855F7;
+            --kuning: #FEF08A;
+            --biru: #BAE6FD;
+            --merah: #FECACA;
+            --hijau: #BBF7D0;
+            --ungu: #E9D5FF;
+            --text-color: #333;
         }
+
         body {
             font-family: 'Gochi Hand', cursive;
-            background-color: var(--pastel-purple); /* Light mode pastel */
-            color: #333;
+            background-color: var(--ungu); /* Latar belakang ungu pastel khas RpleNotViol */
+            color: var(--text-color);
             margin: 0;
-            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
-        .header { text-align: center; padding: 50px; }
+
+        /* Header / Navigasi */
+        header {
+            width: 100%;
+            padding: 20px;
+            background: white;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            box-shadow: 0 4px 0px var(--text-color);
+            margin-bottom: 50px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-weight: bold;
+            padding: 5px 15px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        nav a:hover { background: var(--biru); }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+            background: white;
+            border: 4px solid var(--text-color);
+            border-radius: 30px;
+            box-shadow: 10px 10px 0px var(--merah);
+            max-width: 600px;
+        }
+
+        h1 { font-size: 3rem; margin-bottom: 10px; }
+        p { font-family: 'Architects Daughter', cursive; font-size: 1.2rem; }
+
+        /* Tombol CTA */
         .cta-button {
-            background-color: #FEF08A; /* Kuning Pastel */
-            padding: 15px 30px;
+            display: inline-block;
+            margin-top: 25px;
+            background-color: var(--kuning);
+            padding: 15px 35px;
             border-radius: 50px;
             text-decoration: none;
+            color: var(--text-color);
             font-weight: bold;
-            border: 2px solid #333;
+            font-size: 1.3rem;
+            border: 3px solid var(--text-color);
+            box-shadow: 5px 5px 0px var(--hijau);
+            transition: 0.2s;
+        }
+
+        .cta-button:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 8px 8px 0px var(--biru);
+        }
+
+        /* Section Donasi */
+        .impact {
+            margin-top: 40px;
+            font-size: 0.9rem;
+            color: #555;
+            max-width: 400px;
+            line-height: 1.4;
         }
     </style>
 </head>
 <body>
-    <div class="header">
-        <h1>RpleNotViol (Purple Not Violet)</h1>
-        <p>Perjalanan kami dari nol hingga membantu dunia.</p>
-        <a href="#" class="cta-button">Beli Merch & Donasi 87%</a>
+
+<header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Tentang</a>
+        <a href="#">Merch</a>
+        <a href="#">Gallery</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>RpleNotViol</h1>
+    <p>Purple Not Violet. Dari kebersamaan untuk kemanusiaan.</p>
+    
+    <a href="#" class="cta-button">🛒 Beli Merch & Donasi 87%</a>
+
+    <div class="impact">
+        Setiap pembelian membantu korban genosida (Palestina, Sudan, Kongo), anak-anak, dan hewan terlantar.
     </div>
+</div>
+
 </body>
 </html>
