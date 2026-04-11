@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri Keseruan - RpleNotViol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --kuning: #FEF08A; --biru: #BAE6FD; --merah: #FECACA; --hijau: #BBF7D0; --ungu: #E9D5FF; --text-color: #333;
+        }
+        body {
+            font-family: 'Gochi Hand', cursive;
+            background-color: var(--ungu); /* Latar belakang ungu pastel khas RpleNotViol */
+            color: var(--text-color);
+            margin: 0; display: flex; flex-direction: column; align-items: center;
+        }
+        header {
+            width: 100%; padding: 20px; background: white;
+            display: flex; justify-content: center; gap: 20px;
+            box-shadow: 0 4px 0px var(--text-color); margin-bottom: 30px;
+        }
+        nav a { text-decoration: none; color: var(--text-color); font-weight: bold; padding: 5px 15px; border-radius: 10px; }
+        nav a:hover { background: var(--biru); }
+
+        .container { max-width: 1000px; width: 90%; text-align: center; margin-bottom: 50px; }
+        h1 { font-size: 3.5rem; color: var(--text-color); margin-bottom: 10px; }
+        .subtitle { font-family: 'Architects Daughter', cursive; font-size: 1.2rem; margin-bottom: 40px; }
+
+        /* Grid Galeri */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        /* Kartu Foto dengan Efek Putar Acak */
+        .gallery-card {
+            background: white;
+            padding: 15px;
+            border: 4px solid var(--text-color);
+            border-radius: 10px;
+            transition: 0.3s;
+            box-shadow: 8px 8px 0px var(--text-color);
+        }
+
+        .gallery-card:hover { transform: scale(1.05) rotate(0deg) !important; box-shadow: 12px 12px 0px var(--kuning); z-index: 10; }
+
+        .gallery-img {
+            width: 100%; height: 250px; object-fit: cover;
+            border-radius: 5px; border: 2px solid var(--text-color);
+        }
+
+        .desc { font-size: 1.1rem; margin-top: 15px; font-weight: bold; line-height: 1.3; }
+        
+        /* Rotasi acak buat vibes "Scribble/Tempelan" */
+        .card-1 { transform: rotate(-2deg); }
+        .card-2 { transform: rotate(3deg); }
+        .card-3 { transform: rotate(-1deg); }
+        .card-4 { transform: rotate(2deg); }
+        .card-5 { transform: rotate(-3deg); }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="merch.html">Merch</a>
+        <a href="gallery.html" style="background: var(--ungu);">Gallery</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h1>Keseruan Kami</h1>
+    <p class="subtitle">Intip momen-momen seru dan gokil di balik layar RpleNotViol! ✨</p>
+
+    <div class="gallery-grid">
+        
+        <div class="gallery-card card-1">
+            <img src="bun.jfif" class="gallery-img" alt="Foto Kompak Berempat">
+            <p class="desc">Senyum kompak berempat! Energi positif buat terus berkarya.</p>
+        </div>
+
+        <div class="gallery-card card-2">
+            <img src="bu2.jfif" class="gallery-img" alt="Selfie Seru Berempat">
+            <p class="desc">Selfie gokil bareng tim! Selalu ada tawa di setiap pertemuan.</p>
+        </div>
+
+        <div class="gallery-card card-3">
+    <img src="bu4.jfif" class="gallery-img" alt="Gambar Karikatur dan Foto Referensi">
+    <p class="desc">Wow, sketsanya mirip banget! Momen seru saat hasil karikatur 'Aww...' dibandingin sama foto aslinya.</p>
+        </div>
+        <div class="gallery-card card-4">
+            <img src="bu3.jfif" class="gallery-img" alt="Foto Formal di Perpustakaan">
+            <p class="desc">Tampil formal ala detektif atau ' Bunch of Friends ' di perpustakaan. Serius tapi santai!</p>
+        </div>
+
+        <div class="gallery-card card-5">
+            <img src="b2.jfif" class="gallery-img" alt="Momen Tawa Lepas">
+            <p class="desc">Momen tawa lepas yang gak ternilai. Kebersamaan adalah kunci!</p>
+        </div>
+
+    </div>
+</div>
+
+<footer style="margin: 50px 0; font-size: 0.8rem;">© 2026 RpleNotViol</footer>
+
+</body>
+</html>
