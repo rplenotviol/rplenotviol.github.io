@@ -38,6 +38,13 @@
             gap: 25px;
         }
 
+        /* Link Wrapper agar seluruh kartu bisa diklik */
+        .merch-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
         .merch-card {
             background: white;
             border: 4px solid var(--text-color);
@@ -45,6 +52,7 @@
             padding: 20px;
             transition: 0.3s;
             box-shadow: 6px 6px 0px var(--text-color);
+            cursor: pointer;
         }
 
         .merch-card:hover { transform: translateY(-5px); box-shadow: 10px 10px 0px var(--ungu); }
@@ -58,7 +66,6 @@
         .price { font-size: 1.4rem; font-weight: bold; color: #d63384; margin: 10px 0; }
         .tag-donasi { background: var(--ungu); padding: 5px 10px; border-radius: 10px; font-size: 0.8rem; border: 1px solid var(--text-color); }
 
-        /* Section Kontak */
         .contact-section {
             background: white; border: 4px solid var(--text-color);
             border-radius: 30px; padding: 30px; margin-top: 50px;
@@ -84,71 +91,102 @@
 
 <div class="container">
     <div class="donation-banner">
-        <h2>🛍️ Belanja & Berbagi</h2>
-        <p><strong>87% Keuntungan</strong> disumbangkan untuk misi kemanusiaan & penyelamatan hewan.</p>
+        <h2>🛍️ Katalog Merchandise RpleNotViol</h2>
+        <p>Klik pada produk untuk melihat detail video. <strong>87% Keuntungan</strong> untuk Donasi.</p>
     </div>
 
     <div class="merch-grid">
-        <div class="merch-card">
-            <img src="hoodie.jpeg" class="merch-img" alt="Hoodie">
-            <h3>Hoodie RpleNotViol</h3>
-            <p class="price">Rp 250.000</p>
-            <span class="tag-donasi">Donasi 87%</span>
-        </div>
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="hoodie.jpeg" class="merch-img">
+                <h3>Hoodie Official</h3>
+                <p class="price">Rp 250.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
 
-        <div class="merch-card">
-            <img src="kaos.jpeg" class="merch-img" alt="Kaos">
-            <h3>Kaos Lengan Pendek</h3>
-            <p class="price">Rp 125.000</p>
-            <span class="tag-donasi">Donasi 87%</span>
-        </div>
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="kaos.jpeg" class="merch-img">
+                <h3>Kaos Lengan Pendek</h3>
+                <p class="price">Rp 125.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
 
-        <div class="merch-card">
-            <img src="tmb.jpeg" class="merch-img" alt="Tumbler">
-            <h3>Tumbler Stainless</h3>
-            <p class="price">Rp 150.000</p>
-            <span class="tag-donasi">Donasi 87%</span>
-        </div>
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="tmb.jpeg" class="merch-img">
+                <h3>Tumbler Stainless</h3>
+                <p class="price">Rp 150.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
 
-        <div class="merch-card">
-            <img src="totebag.jpeg" class="merch-img" alt="Tote Bag">
-            <h3>Tote Bag Kanvas</h3>
-            <p class="price">Rp 85.000</p>
-            <span class="tag-donasi">Donasi 87%</span>
-        </div>
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="totebag.jpeg" class="merch-img">
+                <h3>Tote Bag Kanvas</h3>
+                <p class="price">Rp 85.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
 
-        <div class="merch-card">
-            <img src="cup.jpeg" class="merch-img" alt="Mug">
-            <h3>Gelas Mug Keramik</h3>
-            <p class="price">Rp 65.000</p>
-            <span class="tag-donasi">Donasi 87%</span>
-        </div>
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="cup.jpeg" class="merch-img">
+                <h3>Gelas Mug</h3>
+                <p class="price">Rp 65.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
 
-        <div class="merch-card">
-            <img src="pst.jpeg" class="merch-img" alt="Poster">
-            <h3>Poster Aesthetic A3</h3>
-            <p class="price">Rp 35.000</p>
-            <span class="tag-donasi">Donasi 87%</span>
-        </div>
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="pst.jpeg" class="merch-img">
+                <h3>Poster Aesthetic</h3>
+                <p class="price">Rp 35.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
 
-        <div class="merch-card">
-            <img src="ts.jpeg" class="merch-img" alt="Paper Bag">
-            <h3>Paper Bag Kecil</h3>
-            <p class="price">Rp 15.000</p>
-            <span class="tag-donasi">Donasi 87%</span>
-        </div>
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="ts.jpeg" class="merch-img">
+                <h3>Paper Bag</h3>
+                <p class="price">Rp 15.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
+
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="key.jpeg" class="merch-img">
+                <h3>Keychain Akrilik</h3>
+                <p class="price">Rp 25.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
+
+        <a href="https://youtu.be/QDia3e12czc?si=3dQBMpBi3C-KyO4n" target="_blank" class="merch-link">
+            <div class="merch-card">
+                <img src="stk.jpeg" class="merch-img">
+                <h3>Sticker Pack</h3>
+                <p class="price">Rp 20.000</p>
+                <span class="tag-donasi">Donasi 87%</span>
+            </div>
+        </a>
+
     </div>
 
     <div class="contact-section">
-        <h2>☎️ Hubungi Kami</h2>
-        <p>Punya pertanyaan atau ingin konfirmasi pesanan? Chat admin kami di sini:</p>
-        <a href="https://wa.me/6287784430826" class="contact-btn">Chat WhatsApp Admin 1</a>
-        <a href="mailto:rplenotviol@gmail.com" style="color:var(--text-color); font-weight:bold;">Email: rplenotviol@gmail.com</a>
-        <p style="font-size: 0.9rem; margin-top: 15px;">Instagram: @salsadshfala</p>
+        <h2>☎️ Narahubung</h2>
+        <p>Chat admin untuk pemesanan:</p>
+        <a href="https://wa.me/6287784430826" class="contact-btn">WhatsApp Admin</a>
     </div>
 </div>
 
-<footer style="margin-bottom: 30px;">© 2026 RpleNotViol - Impactful Teens Project</footer>
+<footer style="margin-bottom: 30px;">© 2026 RpleNotViol</footer>
 
 </body>
 </html>
