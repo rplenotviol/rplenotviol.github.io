@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merchandise Official - RpleNotViol</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Architects+Daughter&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --kuning: #FEF08A; --biru: #BAE6FD; --merah: #FECACA; --hijau: #BBF7D0; --ungu: #E9D5FF; --text-color: #333;
+        }
+        body {
+            font-family: 'Gochi Hand', cursive;
+            background-color: var(--biru);
+            color: var(--text-color);
+            margin: 0; display: flex; flex-direction: column; align-items: center;
+        }
+        header {
+            width: 100%; padding: 20px; background: white;
+            display: flex; justify-content: center; gap: 20px;
+            box-shadow: 0 4px 0px var(--text-color); margin-bottom: 30px;
+        }
+        nav a { text-decoration: none; color: var(--text-color); font-weight: bold; padding: 5px 15px; border-radius: 10px; }
+        nav a:hover { background: var(--ungu); }
+
+        .container { max-width: 1100px; width: 90%; text-align: center; margin-bottom: 50px; }
+        
+        .donation-banner {
+            background: var(--kuning);
+            padding: 20px; border: 4px solid var(--text-color);
+            border-radius: 20px; margin-bottom: 40px;
+            box-shadow: 8px 8px 0px var(--merah);
+        }
+
+        .merch-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .merch-card {
+            background: white;
+            border: 4px solid var(--text-color);
+            border-radius: 25px;
+            padding: 20px;
+            transition: 0.3s;
+            box-shadow: 6px 6px 0px var(--text-color);
+        }
+
+        .merch-card:hover { transform: translateY(-5px); box-shadow: 10px 10px 0px var(--ungu); }
+
+        .merch-img {
+            width: 100%; height: 250px; object-fit: cover;
+            border-radius: 15px; border: 2px solid var(--text-color);
+            margin-bottom: 15px;
+        }
+
+        .price { font-size: 1.4rem; font-weight: bold; color: #d63384; margin: 10px 0; }
+        .tag-donasi { background: var(--ungu); padding: 5px 10px; border-radius: 10px; font-size: 0.8rem; border: 1px solid var(--text-color); }
+
+        /* Section Kontak */
+        .contact-section {
+            background: white; border: 4px solid var(--text-color);
+            border-radius: 30px; padding: 30px; margin-top: 50px;
+            width: 100%; max-width: 600px; box-shadow: -8px 8px 0px var(--hijau);
+        }
+        .contact-btn {
+            display: inline-block; background: #25D366; color: white;
+            padding: 10px 20px; border-radius: 50px; text-decoration: none;
+            font-weight: bold; border: 2px solid var(--text-color); margin: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="merch.html" style="background: var(--biru);">Merch</a>
+        <a href="#">Gallery</a>
+    </nav>
+</header>
+
+<div class="container">
+    <div class="donation-banner">
+        <h2>🛍️ Belanja & Berbagi</h2>
+        <p><strong>87% Keuntungan</strong> disumbangkan untuk misi kemanusiaan & penyelamatan hewan.</p>
+    </div>
+
+    <div class="merch-grid">
+        <div class="merch-card">
+            <img src="hoodie.jpeg" class="merch-img" alt="Hoodie">
+            <h3>Hoodie RpleNotViol</h3>
+            <p class="price">Rp 250.000</p>
+            <span class="tag-donasi">Donasi 87%</span>
+        </div>
+
+        <div class="merch-card">
+            <img src="kaos.jpeg" class="merch-img" alt="Kaos">
+            <h3>Kaos Lengan Pendek</h3>
+            <p class="price">Rp 125.000</p>
+            <span class="tag-donasi">Donasi 87%</span>
+        </div>
+
+        <div class="merch-card">
+            <img src="tmb.jpeg" class="merch-img" alt="Tumbler">
+            <h3>Tumbler Stainless</h3>
+            <p class="price">Rp 150.000</p>
+            <span class="tag-donasi">Donasi 87%</span>
+        </div>
+
+        <div class="merch-card">
+            <img src="totebag.jpeg" class="merch-img" alt="Tote Bag">
+            <h3>Tote Bag Kanvas</h3>
+            <p class="price">Rp 85.000</p>
+            <span class="tag-donasi">Donasi 87%</span>
+        </div>
+
+        <div class="merch-card">
+            <img src="cup.jpeg" class="merch-img" alt="Mug">
+            <h3>Gelas Mug Keramik</h3>
+            <p class="price">Rp 65.000</p>
+            <span class="tag-donasi">Donasi 87%</span>
+        </div>
+
+        <div class="merch-card">
+            <img src="pst.jpeg" class="merch-img" alt="Poster">
+            <h3>Poster Aesthetic A3</h3>
+            <p class="price">Rp 35.000</p>
+            <span class="tag-donasi">Donasi 87%</span>
+        </div>
+
+        <div class="merch-card">
+            <img src="ts.jpeg" class="merch-img" alt="Paper Bag">
+            <h3>Paper Bag Kecil</h3>
+            <p class="price">Rp 15.000</p>
+            <span class="tag-donasi">Donasi 87%</span>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>☎️ Hubungi Kami</h2>
+        <p>Punya pertanyaan atau ingin konfirmasi pesanan? Chat admin kami di sini:</p>
+        <a href="https://wa.me/6287784430826" class="contact-btn">Chat WhatsApp Admin 1</a>
+        <a href="mailto:rplenotviol@gmail.com" style="color:var(--text-color); font-weight:bold;">Email: rplenotviol@gmail.com</a>
+        <p style="font-size: 0.9rem; margin-top: 15px;">Instagram: @salsadshfala</p>
+    </div>
+</div>
+
+<footer style="margin-bottom: 30px;">© 2026 RpleNotViol - Impactful Teens Project</footer>
+
+</body>
+</html>
