@@ -31,10 +31,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        line-height: 1.6;
     }
 
-    h1, h2, h3 {
-        font-family: 'Gochi Hand', cursive;
+    h1, h2, h3, nav a {
+        font-family: 'Gochi Hand', cursive !important;
     }
 
     header {
@@ -43,7 +44,7 @@
         background: white;
         display: flex;
         justify-content: center;
-        gap: 20px;
+        gap: 25px;
         box-shadow: 0 4px 0px var(--text-color);
         margin-bottom: 30px;
     }
@@ -52,10 +53,15 @@
         text-decoration: none;
         color: var(--text-color);
         font-weight: bold;
+        font-size: 1.3rem;
+        padding: 5px 10px;
+        border-radius: 8px;
+        transition: 0.2s;
     }
 
     nav a:hover {
         background: var(--biru);
+        transform: rotate(-2deg);
     }
 
     .container {
@@ -71,26 +77,28 @@
 
     h1 {
         text-align: center;
-        font-size: 3rem;
-        color: var(--text-color);
+        font-size: 3.5rem;
+        margin-top: 0;
     }
 
-    .story-section {
-        line-height: 1.6;
-        font-size: 1.2rem;
+    p {
+        margin-bottom: 15px;
+        font-size: 1.1rem;
     }
 
     .highlight {
         background: var(--hijau);
-        padding: 0 5px;
+        padding: 2px 8px;
+        border-radius: 5px;
+        font-weight: 600;
     }
 
     .philosophy {
         margin-top: 30px;
-        padding: 20px;
+        padding: 25px;
         background: var(--biru);
         border-radius: 20px;
-        border: 2px solid var(--text-color);
+        border: 3px solid var(--text-color);
     }
 </style>
 </head>
